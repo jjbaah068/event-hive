@@ -6,7 +6,7 @@ export default function Navbar() {
             </h1>
             <div className="space-x-4 inline-block">
                 <button className="font-bold">Login</button>
-                <button className="bg-[#7848F4] text-white rounded-sm px-6 py-2">Signup</button>
+                <button className="bg-[#7848F4] text-white rounded-sm px-6 py-2 mr-4">Signup</button>
             </div>
         </nav>
 
