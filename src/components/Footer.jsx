@@ -20,8 +20,8 @@ export default function Footer() {
                <span>Get in touch</span>
                 <span>FAQs</span>
         </div>
-        <hr />
-        <div className="flex flex-row place-content-between py-5">
+        <hr className="m-6" />
+        <div className="flex flex-row place-content-between py-2 ml-5">
             <div className="space-x-4">
                 <button className="hover:bg-[#7848F4]">English</button>
                 <button className="hover:bg-[#7848F4]">French</button>
@@ -32,7 +32,7 @@ export default function Footer() {
                 <Instagram />
                 <Facebook />
             </div>
-            <p>Non Copyrighted© 2025 Upload by EventHive</p>
+            <p className="mr-4">Non Copyrighted© 2025 Upload by EventHive</p>
         </div>
       </footer>
     );
