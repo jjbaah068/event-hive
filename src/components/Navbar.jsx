@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-        <nav className="flex flex-row place-content-between py-4">
+        <nav className="flex flex-row place-content-between py-4 bg-[#f8f8fa]">
             <h1 className="font-bold text-2xl"><span>Event</span>
                 <span className="text-[#7848F4] px-0.5 text-2xl">Hive</span>
             </h1>

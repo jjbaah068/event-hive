@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
     <Navbar />
-    <section className="bg-[url(./assets/images/hero-bg.png)] h-[596px] bg-no-repeat bg-cover w-[95%] mx-auto relative">
+    <section className="bg-[url(./assets/images/hero-bg.png)] h-[596px] bg-no-repeat bg-cover w-[95%] mx-auto relative bg-[#f8f8fa]">
         <h1 className="text-big-heading text-white w-[30%] mx-auto text-center pt-32 font-bold">MADE FOR THOSE WHO DO</h1>
          <form className="bg-navy-blue w-[90%] mx-auto py-6 px-10 flex flex-row justify-between rounded-md absolute -bottom-12 left-[5%]">
         <div className="flex flex-col w-[30%]">
@@ -38,14 +38,32 @@ export default function Home() {
         </div>
     </form>
     </section>
-    <section>
-        <div className="">
-            <h1>
-                <span>Upcoming</span>
-                <span>Events</span>
+    <section className="bg-[#f8f8fa]">
+        <div className="mt-[105px] ">
+            <h1 className="ml-24">
+                <span className="font-bold text-2xl">Upcoming</span>
+                <span className="font-bold text-2xl text-[#7848F4]"> Events</span>
             </h1>
+            <div className="flex flex-row justify-end mr-10">
+                <select name="when" id="when">
+                    <option selected disabled>Weekdays</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                </select>
+                <select name="event-type" id="event-type">
+                    <option selected disabled>Event Type</option>
+                    <option value="Festival">Festival</option>
+                    <option value="Concert">Concert</option>
+                </select>
+                <select name="any-category" id="any-category">
+                    <option selected disabled>Any Category</option>
+                    <option value="Arts Culture">Arts Culture</option>
+                    <option value="Community">Community</option>
+                </select>
+                
+            </div>
         </div>
-        <div className="grid grid-cols-3 gap-5 p-20">
+        <div className="grid grid-cols-3 gap-5 p-12.5 ml-10 w-[90%]">
             {[1,2,3,4,5,6].map(n => <EventCard key={n} />)}
         </div>
     </section>
