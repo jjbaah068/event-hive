@@ -5,9 +5,13 @@ export default function ViewEvent() {
     return (
         <>
         <Navbar />
-        <section>
-            <h1>Welcome to View Event Page</h1>
+        <section className="bg-[url(./)] h-[596px] bg-no-repeat bg-cover w-[95%] mx-auto relative bg-[#f8f8fa]">
+        <h1>
+
+        </h1>
+        
         </section>
+       
         <Footer />
         </>
     );

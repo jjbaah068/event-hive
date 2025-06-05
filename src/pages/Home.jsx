@@ -67,7 +67,7 @@ export default function Home() {
                         <span className="font-bold text-2xl">Upcoming</span>
                         <span className="font-bold text-2xl text-[#7848F4]"> Events</span>
                     </h1>
-                    <div className="flex flex-row justify-end mr-15">
+                    <div className="flex flex-row justify-end mr-15 space-x-2">
                         <select name="when" id="when">
                             <option selected disabled>Weekdays</option>
                             <option value="Monday">Monday</option>
@@ -95,6 +95,10 @@ export default function Home() {
                         );
                     })}
                 </div>
+
+                <div className="text-center ">
+                <button className="bg-[#7848F4] text-white rounded-sm px-4 py-3">Load more...</button>
+            </div>
             </section>
 
             <section className="h-[500px]"></section>
